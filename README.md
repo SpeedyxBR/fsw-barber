@@ -1,6 +1,6 @@
 # 🪒 FSW Barber
 
-![Capa do Projeto](./public/capa-projeto.png)
+![Capa do Projeto](./public/Capa.png)
 
 > **Sistema de agendamento para barbearias** - Desenvolvido com Next.js 14, Prisma e PostgreSQL
 
