@@ -162,9 +162,9 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 ## 📞 Contato
 
-**Desenvolvedor**: [Seu Nome]
-**Email**: [seu-email@exemplo.com]
-**LinkedIn**: [seu-linkedin]
+**Desenvolvedor**: [Andrel]
+**Email**: [andrel.cilva58@gmail.com]
+**LinkedIn**: [https://www.linkedin.com/in/andrel-carvalho]
 
 ---
 
