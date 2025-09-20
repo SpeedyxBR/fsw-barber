@@ -8,6 +8,7 @@ import { Badge } from "./_components/ui/badge"
 import { Avatar, AvatarImage } from "./_components/ui/avatar"
 import { db } from "./_lib/prisma"
 import BarbershopItem from "./_components/barbershop.item"
+import { quickSearchOptions } from "./_constants/search"
 
 const Home = async () => {
   const barbershops = await db.barberShop.findMany({})
@@ -35,58 +36,17 @@ const Home = async () => {
 
         {/* BUSCA RAPIDA */}
         <div className="flex gap-3 mt-6 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
-          <Button className="gap-2" variant="secondary">
-            <Image 
-            src="/cabelo.svg" 
-            width={16} height={16} 
-            alt="Cabelo" />
-            Cabelo
-
-          </Button>
-
-            <Button className="gap-2" variant="secondary">
-            <Image 
-            src="/barba.svg" 
-            width={16} height={16} 
-            alt="Barba" />
-            Barba
-          </Button>
-
-            <Button className="gap-2" variant="secondary">
-            <Image 
-            src="/acabamento.svg" 
-            width={16} 
-            height={16} 
-            alt="Acabamento" />
-            Acabamento
-          </Button>
-
-           <Button className="gap-2" variant="secondary">
-            <Image 
-            src="/massagem.svg" 
-            width={16} height={16} 
-            alt="Massagem" />
-            Massagem
-
-          </Button>
-
-            <Button className="gap-2" variant="secondary">
-            <Image 
-            src="/sobrancelha.svg" 
-            width={16} height={16} 
-            alt="Sobrancelha" />
-            Sobrancelha
-          </Button>
-
-            <Button className="gap-2" variant="secondary">
-            <Image 
-            src="/Hidratacao.svg" 
-            width={16} 
-            height={16} 
-            alt="Hidratação" />
-            Hidratação
-          </Button>
-          
+          {quickSearchOptions.map((option) => (
+            <Button key={option.title} className="gap-2" variant="secondary">
+              <Image 
+                src={option.imageUrl} 
+                width={16} 
+                height={16} 
+                alt={option.title} 
+              />
+              {option.title}
+            </Button>
+          ))}
         </div>
 
 
@@ -125,6 +85,7 @@ const Home = async () => {
             </div>
           </CardContent>
         </Card>
+        
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
           Recomendados
         </h2>
