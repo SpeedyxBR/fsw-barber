@@ -49,7 +49,6 @@ const Home = async () => {
           ))}
         </div>
 
-
         {/* IMAGEM */}
         <div className="relative mt-6 h-[150px] w-full overflow-hidden rounded-lg">
           <Image

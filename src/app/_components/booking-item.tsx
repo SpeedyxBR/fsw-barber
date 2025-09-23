@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/app/_components/ui/card"
 import { Badge } from "@/app/_components/ui/badge"
 import { Avatar, AvatarImage } from "@/app/_components/ui/avatar"
 
+
 const BookingItem = () => {
   return (
     <Card>
