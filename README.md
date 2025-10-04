@@ -20,8 +20,6 @@ O **FSW Barber** é uma aplicação web moderna para gerenciamento de agendament
 - **Fontes**: Geist Sans & Geist Mono
 - **Ferramentas de Desenvolvimento**: 
   - ESLint + Prettier
-  - Husky + Lint-staged
-  - Commitlint
 
 ## 🏗️ Arquitetura do Banco de Dados
 
